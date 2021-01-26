@@ -23,7 +23,4 @@ jobs:
     - name: Push no NuGet
       run: |
         cd out
-        nuget source Add -Name "github1" -Source "https://nuget.pkg.github.com/julioarruda/index.json"
-        nuget setApiKey ${{ secrets.GITHUB_TOKEN }} -Source "https://nuget.pkg.github.com/julioarruda/index.json"
-        dotnet nuget push *.nupkg --source "github1" --skip-duplicate
-
+        dotnet nuget push *.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "https://nuget.pkg.github.com/julioarruda/index.json" --skip-duplicate
