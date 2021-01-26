@@ -6,7 +6,7 @@
     <Version>1.0.0</Version>
     <Authors>Julio Arruda</Authors>
     <Company>Canal Julio Arruda</Company>
-
+    <RepositoryUrl>https://github.com/julioarruda/package</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   
